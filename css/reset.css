@@ -1,0 +1,59 @@
+
+/* resetando margens, padding e box-sizing para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* decoração de texto de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* estilos de botões */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* estilos de formulários */
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* imagens de forma responsiva */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* estilos de tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* fonte base  */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth; /* rolagem suave */
+}
+
+/* estilo base paradocumento */
+body {
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}

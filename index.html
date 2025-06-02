@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Catalyst City</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/style.js"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo sem fundo.png" alt="Logo The Catalyst City">
+                </div>
+
+
+
+
+                <nav class="menu">
+                    <button class="menu-toggle" aria-label="Abrir menu de navegação">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="menu-items">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+
+
+
+
+            </div>
+        </div>
+    </header>
+
+<!-- APRESENTAÇÃO -->
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-card">
+                <h1>Karatech: Com agilidade e precisão desenvolvendo o futuro da cidadania através de jogos.</h1>
+                <p>Criadores de The Catalyst City: O simulador de gestão de crises que capacita a próxima geração de líderes.</p>
+                <a href="#sobre" class="btn-primary">SAIBA MAIS SOBRE O JOGO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE O JOGO -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="about-card">
+                <h2>The Catalyst City: Prepare-se para Liderar.</h2>
+                <p>Esse jogo é um simulador imersivo que coloca os jogadores no papel de um(a) prefeito(a).</p>
+                <p>Você será encarregado(a) de gerenciar sua cidade diante de desastres naturais imprevisíveis.</p>
+                
+                <!-- carrossel jogo -->
+                <div class="slider-container">
+                    <div class="slider" id="game-slider">
+                        <!--imagens -->
+                        <div class="slide">
+                            <img src="images/tela jogo exemplo 2.png" alt="Tela do jogo mostrando cenário de gerenciamento de crise" class="slide-img">
+                        </div>
+                        <div class="slide">
+                            <img src="images/tela jogo exemplo 1.png" alt="Tela do jogo mostrando interface de gerenciamento de crise" class="slide-img">
+                        </div>
+                        <div class="slide">
+                            <img src="images/tela jogo exemplo 3.png" alt="Tela do jogo mostrando interface de gerenciamento de crises" class="slide-img">
+                        </div>
+                    </div>
+                    
+                    <!-- controles carrossel-->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" onclick="moveSlide('game-slider', -1)" aria-label="Slide anterior">&#10094;</button>
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="currentSlide('game-slider', 0)" aria-label="Primeiro slide"></span>
+                            <span class="dot" onclick="currentSlide('game-slider', 1)" aria-label="Segundo slide"></span>
+                            <span class="dot" onclick="currentSlide('game-slider', 2)" aria-label="Terceiro slide"></span>
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide('game-slider', 1)" aria-label="Próximo slide">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- habilidades desenvolvidas -->
+    <section id="habilidades" class="skills-section">
+        <div class="container">
+
+            <div class="title-card teal">
+                <h2>O Jogo que Transforma: Preparando o Futuro da Nossa Sociedade.</h2>
+            </div>
+            
+            <!--habilidades-->
+            <div class="skills-cards">
+                <!-- habilidade 1-->
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <img src="images/brain-solid.svg" alt="Ícone representando pensamento crítico" class="icon">
+                        </div>
+                        <div class="skill-text">
+                            <div class="skill-tag">Pensamento Crítico</div>
+                            <p>Estimula a análise de cenários complexos e a tomada de decisões sob pressão.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- habilidade 2 -->
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <img src="images/handshake-solid.svg" alt="Ícone representando gestão de recursos" class="icon">
+                        </div>
+                        <div class="skill-text">
+                            <div class="skill-tag">Gestão de Recursos</div>
+                            <p>Ensina a alocar orçamentos e equipes de forma eficiente para maximizar resultados.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- habilidade 3 -->
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <img src="images/heart-solid.svg" alt="Ícone representando consciência cívica" class="icon">
+                        </div>
+                        <div class="skill-text">
+                            <div class="skill-tag">Consciência Cívica</div>
+                            <p>Fomenta a empatia e a compreensão sobre o impacto das decisões na vida em comunidade.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- habilidade 4 -->
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <img src="images/lightbulb-solid.svg" alt="Ícone representando resolução de problemas" class="icon">
+                        </div>
+                        <div class="skill-text">
+                            <div class="skill-tag">Resolução de Problemas</div>
+                            <p>Desafia os jogadores a encontrar soluções inovadoras para situações de crise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--habilidade 5 -->
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <img src="images/earth-americas-solid.svg" alt="Ícone representando resolução de problemas" class="icon">
+                        </div>
+                        <div class="skill-text">
+                            <div class="skill-tag">Resolução de Problemas</div>
+                            <p>Desafia os jogadores a encontrar soluções inovadoras para situações de crise.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- habilidade 6 -->
+                <div class="skill-card">
+                    <div class="skill-content">
+                        <div class="skill-icon">
+                            <img src="images/shield-halved-solid.svg" alt="Ícone representando educação climática" class="icon">
+                        </div>
+                        <div class="skill-text">
+                            <div class="skill-tag">Pensamento Crítico</div>
+                            <p>Estimula a análise de cenários complexos e a tomada de decisões sob pressão.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ferramenta pedagógica -->
+    <section class="education-section">
+        <div class="container">
+            <!-- card com fundo escuro -->
+            <div class="education-card dark">
+                <h2>Ferramenta Pedagógica Inovadora para o Ensino Fundamental e Médio.</h2>
+                
+                <p>Integrar The Catalyst City ao currículo escolar oferece uma abordagem prática e envolvente para tópicos como geografia, ciências, ética e gestão pública.</p>
+                
+                <p>O jogo serve como uma plataforma para discussões em sala de aula, projetos em grupo. É uma forma eficaz de tornar o aprendizado estimulante.</p>
+                
+                <!-- lista -->
+                <ul class="feature-list">
+                    <li>Aprendizagem Ativa e Gamificada.</li>
+                    <li>Simulação de Situações Reais.</li>
+                    <li>Recurso Didático Flexível e Adaptável.</li>
+                </ul>
+                
+                <!-- botão (não tem nada)-->
+                <a href="#" class="btn-primary">BAIXE NOSSO GUIA PARA EDUCADORES</a>
+            </div>
+        </div>
+    </section>
+
+    <!--equipe de crise -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-card">
+                <div class="team-header">
+                    
+                    <div class="team-tag">Equipe de Crise</div>
+                </div>
+                
+                <p>Em The Catalyst City, você contará com uma equipe de especialistas para te auxiliar nas decisões mais difíceis. Conheça alguns de seus conselheiros:</p>
+                
+                <!--carrossel de personagens-->
+                <div class="slider-container team-slider-container">
+                    <div class="slider" id="team-slider">
+                        <!-- imagens -->
+                        <div class="slide">
+                            <div class="team-member-slide">
+                                <img src="images/1 Bruno.png" alt="Capitãoda Defesa Civil" class="member-img">
+                                <div class="member-info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="team-member-slide">
+                                <img src="images/2 Elara.png" alt="Especialista em logística" class="member-img">
+                                <div class="member-info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="team-member-slide">
+                                <img src="images/3 Lúcia.png" alt="Médica especialista" class="member-img">
+                                <div class="member-info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="team-member-slide">
+                                <img src="images/4 Sofia.png" alt="Oficial da Defesa Civil" class="member-img">
+                                <div class="member-info">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="team-member-slide">
+                                <img src="images/5 Ricardo.png" alt="Analista de dados" class="member-img">
+                                <div class="member-info">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- controles do carrossel -->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev" onclick="moveSlide('team-slider', -1)" aria-label="Personagem anterior">&#10094;</button>
+
+                        <!--para não me perder: quando o navegador vê "&#10094;", ele converte para esse caractere ❮, sem depender de fonte ou imagem.-->
+ 
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="currentSlide('team-slider', 0)" aria-label="Primeiro personagem"></span>
+                            <span class="dot" onclick="currentSlide('team-slider', 1)" aria-label="Segundo personagem"></span>
+                            <span class="dot" onclick="currentSlide('team-slider', 2)" aria-label="Terceiro personagem"></span>
+                            <span class="dot" onclick="currentSlide('team-slider', 3)" aria-label="Quarto personagem"></span>
+                            <span class="dot" onclick="currentSlide('team-slider', 4)" aria-label="Quinto personagem"></span>
+                        </div>
+                        <button class="slider-btn next" onclick="moveSlide('team-slider', 1)" aria-label="Próximo personagem">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--contato-->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <!--card com fundo escuro-->
+            <div class="contact-card dark">
+                <h2>Entre em Contato com Nossa Equipe.</h2>
+                
+                <p>Seja para dúvidas sobre o jogo, parcerias educacionais ou oportunidades de colaboração, adoraríamos conversar com você.</p>
+                
+                <!--formulário da área de contato-->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="nome" class="sr-only">Seu nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Seu E-mail Profissional</label>
+                        <input type="email" id="email" name="email" placeholder="Seu E-mail Profissional" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="assunto" class="sr-only">Tipo de Contato</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Tipo de Contato" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem" class="sr-only">Sua Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">ENVIAR MENSAGEM</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 The Catalyst City. Todos os direitos reservados.</p>
+                <p>Desenvolvido por: Helena, Isabella, Leonardo, Victoria, Álvaro e Eric</p>
+            </div>
+        </div>
+    </footer>
+
+// (\_/)
+// (•_•)
+// / >🧡H
+
+</body>
+</html>
